@@ -26,10 +26,12 @@ public class CustomerReport {
             System.out.println();
             System.out.println("Customer: "
                     + customer.getLastName() + ", "
-                    + customer.getFirstName());
+                    + customer.getFirstName()
+                    + "\nBranch: " + customer.getBranch() + ", "
+                    + customer.getBranch().getServiceLevel());
 
             // For each account for this customer...
-            for (int acctIndex = 0; acctIndex< customer.getNumOfAccounts(); acctIndex++) {
+            for (int acctIndex = 0; acctIndex < customer.getNumOfAccounts(); acctIndex++) {
                 Account account = customer.getAccount(acctIndex);
 
                 // Print the current balance of the account

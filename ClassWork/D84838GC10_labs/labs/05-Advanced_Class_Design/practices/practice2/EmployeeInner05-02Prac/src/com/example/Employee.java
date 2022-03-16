@@ -2,6 +2,8 @@ package com.example;
 
 public class Employee {
 
+    private BenefitsHelper helper = new BenefitsHelper();
+
     private String name;
     private String role;
     private String dept;
@@ -34,6 +36,26 @@ public class Employee {
         return salary;
     }
 
+    public double getWithholding() {
+        return helper.calcWithholding(salary);
+    }
+
+    public double getBonus() {
+        return helper.calcBonus(salary);
+    }
+
+    class BenefitsHelper {
+
+        private final double bonusRate = 0.02;
+        private final double withholdingRate = 0.07;
+
+        protected double calcBonus(double salary) {
+            return salary * bonusRate;
+        }
+
+        protected double calcWithholding(double salary) {
+            return salary * withholdingRate;
+        }
+    }
+
 }
-
-
