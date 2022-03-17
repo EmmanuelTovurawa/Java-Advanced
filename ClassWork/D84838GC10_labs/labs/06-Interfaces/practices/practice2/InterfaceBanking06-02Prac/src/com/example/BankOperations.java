@@ -2,19 +2,10 @@ package com.example;
 
 public interface BankOperations {
 
-    public void addCustomer(String f, String l, Branch b) {
-        int i = numberOfCustomers++;
-        customers[i] = new Customer(f, l, b);
-    }
-
-    public int getNumOfCustomers() {
-        return numberOfCustomers;
-    }
-
-    public Customer getCustomer(int customerIndex) {
-        return customers[customerIndex];
-    }
-
+    public void addCustomer(String f, String l,Branch b);
+    public int getNumOfCustomers();   
+    public Customer getCustomer(int customerIndex);
+    
     public default void generateReport() {
 
         // Print report header
@@ -35,12 +26,11 @@ public interface BankOperations {
 
             // For each account for this customer...
             for (int acctIndex = 0; acctIndex< customer.getNumOfAccounts(); acctIndex++) {
-                Account account = customer.getAccount(acctIndex);
+                AccountOperations account = customer.getAccount(acctIndex);
 
                 // Print the current balance of the account
                 System.out.println("    " + account);
             }
         }
     }
-
 }
