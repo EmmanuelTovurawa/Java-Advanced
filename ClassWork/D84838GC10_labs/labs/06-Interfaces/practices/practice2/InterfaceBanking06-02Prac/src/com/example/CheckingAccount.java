@@ -1,6 +1,4 @@
-
-import com.example.Account;
-import com.example.AccountOperations;
+package com.example;
 
 
 public class CheckingAccount extends Account implements AccountOperations{

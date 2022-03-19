@@ -13,7 +13,7 @@ public class Main {
     private static void initializeCustomers(BankOperations bank) {
         Customer customer;
 // Create several customers and their accounts
-        bank.addCustomer("Will", "Smith",Branch.LA);
+        bank.addCustomer("Will", "Smith", Branch.LA);
         customer = bank.getCustomer(0);
         customer.addAccount(new SavingsAccount(500.00));
 
@@ -35,7 +35,7 @@ public class Main {
         customer = bank.getCustomer(4);
         customer.addAccount(new CheckingAccount(200.00));
 
-        bank.addCustomer("Maria", "Soley",Branch.Bangalore);
+        bank.addCustomer("Maria", "Soley", Branch.Bangalore);
         customer = bank.getCustomer(5);
         AccountOperations acct5 = new CheckingAccount(100.00);
 
