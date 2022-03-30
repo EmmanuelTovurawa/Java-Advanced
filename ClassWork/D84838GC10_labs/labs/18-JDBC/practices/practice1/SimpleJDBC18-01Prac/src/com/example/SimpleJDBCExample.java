@@ -17,15 +17,18 @@ public class SimpleJDBCExample {
         String password = "scott";
 
         // Create a simple query
-        String query = "select * from EMPLOYEE";
+        String query = query = "INSERT INTO Employee VALUES (400, 'Bill','Murray','1950-09-21', 150000)";
 
         // A try-with-resources example
         // Connection and Statement implement java.lan.AutoCloseable
         try (Connection con = DriverManager.getConnection(url, username, password)) {
             Statement stmt = con.createStatement();
-            ResultSet rs = stmt.executeQuery(query);
+            //ResultSet rs = stmt.executeQuery(query);
+            if (stmt.executeUpdate(query) != 1) {
+                System.out.println("Failed to add a new employee record");
+            }
 
-            while (rs.next()) {
+            /*while (rs.next()) {
                 int empID = rs.getInt("ID");
                 String first = rs.getString("FIRSTNAME");
                 String last = rs.getString("LASTNAME");
@@ -36,7 +39,7 @@ public class SimpleJDBCExample {
                         + "Birth Date:    " + birth_date + "\n"
                         + "Salary:        " + salary + "\n");
 
-            }
+            }*/
         } catch (SQLException e) {
             System.out.println("Exception creating connection: " + e);
             System.exit(0);
