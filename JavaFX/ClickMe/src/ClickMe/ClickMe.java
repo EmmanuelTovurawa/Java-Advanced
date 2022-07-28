@@ -39,7 +39,7 @@ public class ClickMe extends Application {
     }
 
     public void buttonClick() {
-        if (btn.getText() == "Click me please!") {
+        if (btn.getText() == "Click me please!"){
             btn.setText("You clicked me!");
         } else {
             btn.setText("Click me please!");
