@@ -79,7 +79,7 @@ public class PizzaOrder extends Application {
         rdoThick.setToggleGroup(groupCrust);
         VBox paneCrust = new VBox(lblCrust, rdoThin, rdoThick);
         paneCrust.setSpacing(10);
-// Create the toppings pane 
+// Create the toppings pane ie toppings
         Label lblToppings = new Label("Toppings");
         chkPepperoni = new CheckBox("Pepperoni");
         chkMushrooms = new CheckBox("Mushrooms");
