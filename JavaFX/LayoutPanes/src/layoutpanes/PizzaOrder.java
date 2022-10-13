@@ -103,7 +103,7 @@ public class PizzaOrder extends Application {
         grid.setMinWidth(500);
         grid.setPrefWidth(500);
         grid.setMaxWidth(800);
-// Add the nodes to the pane 
+// Add the nodes to the the pane 
         grid.addRow(0, lblName, txtName);
         grid.addRow(1, lblPhone, txtPhone);
         grid.addRow(2, lblAddress, txtAddress);
