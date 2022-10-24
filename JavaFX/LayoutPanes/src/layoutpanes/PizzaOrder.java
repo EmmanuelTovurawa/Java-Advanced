@@ -109,7 +109,7 @@ public class PizzaOrder extends Application {
         grid.addRow(2, lblAddress, txtAddress);
         grid.addRow(3, paneSize, paneCrust, paneToppings);
         grid.add(paneButtons, 2, 4);
-// Set alignments and spanning 
+// Set both alignments and spanning 
         grid.setHalignment(lblName, HPos.RIGHT);
         grid.setHalignment(lblPhone, HPos.RIGHT);
         grid.setHalignment(lblAddress, HPos.RIGHT);
@@ -150,7 +150,7 @@ public class PizzaOrder extends Application {
         if (rdoLarge.isSelected()) {
             msg += "large ";
         }
-// Add the crust style
+// Add the crust style 
         if (rdoThin.isSelected()) {
             msg += "thin crust pizza with ";
         }
