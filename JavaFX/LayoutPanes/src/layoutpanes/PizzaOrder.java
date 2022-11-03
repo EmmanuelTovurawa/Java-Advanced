@@ -36,7 +36,7 @@ public class PizzaOrder extends Application {
     @Override
     public void start(Stage primaryStage) {
         stage = primaryStage;
-// Create the name label and text field 
+// Create the name label and text input field 
         Label lblName = new Label("Name:");
         txtName = new TextField();
         txtName.setMinWidth(100);
