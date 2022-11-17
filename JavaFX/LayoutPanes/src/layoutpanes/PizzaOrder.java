@@ -168,7 +168,7 @@ public class PizzaOrder extends Application {
             msg += "the following toppings:\n"
                     + toppings;
         }
-// Display the alert message
+// Display the alert message/s
         Alert a = new Alert(Alert.AlertType.INFORMATION, msg);
         a.setTitle("Order Details");
         a.showAndWait();
