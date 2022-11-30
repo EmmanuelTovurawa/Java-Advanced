@@ -27,7 +27,7 @@ public class ClickMe extends Application {
         btn = new Button();
         btn.setText("Click me please!");
         btn.setOnAction(e -> buttonClick());
-// Add the button to a layout pane
+// Add the button to the layout pane
         BorderPane pane = new BorderPane();
         pane.setCenter(btn);
 // Add the layout pane to a scene
