@@ -24,7 +24,7 @@ public class ClickCounter extends Application {
     int iClickCount = 0;
 
     @Override
-    public void start(Stage primaryStage) {// Create the button//
+    public void start(Stage primaryStage) {// Create the button/s//
         btn = new Button();
         btn.setText("Click me please!");
         btn.setOnAction(e -> buttonClick());
