@@ -35,7 +35,7 @@ public class ClickCounter extends Application {
         BorderPane pane = new BorderPane();
         pane.setTop(lbl);
         pane.setCenter(btn);
-// Add the layout pane to a scene
+// Add the layout pane to a scene/s
         Scene scene = new Scene(pane, 250, 150);
 // Add the scene to the stage, set the title
 // and show the stage
