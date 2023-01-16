@@ -30,7 +30,7 @@ public class ClickMe extends Application {
 // Add the button to the layout pane
         BorderPane pane = new BorderPane();
         pane.setCenter(btn);
-// Add the layout pane to the scene
+// Add the layout pane to the scene//
         Scene scene = new Scene(pane, 300, 250);
 // Finalize and show the stage//
         primaryStage.setScene(scene);
