@@ -23,7 +23,7 @@ public class PizzaOrder extends Application {
     }
 
     Stage stage;
-// Customer name, phone and address fields
+// Customer name, phone and address fields//
     TextField txtName;
     TextField txtPhone;
     TextField txtAddress;
