@@ -27,7 +27,7 @@ public class PizzaOrder extends Application {
     TextField txtName;
     TextField txtPhone;
     TextField txtAddress;
-// Size radio buttons
+// Size radio buttons//
     RadioButton rdoSmall;
     RadioButton rdoMedium;
     RadioButton rdoLarge;
