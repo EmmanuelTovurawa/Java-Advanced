@@ -5,10 +5,13 @@
 package clickme;
 
 import javafx.application.*;
-import javafx.stage.*;
-import javafx.scene.*;
-import javafx.scene.layout.*;
-import javafx.scene.control.*;
+import javafx.event.*;
+import javafx.event.*;
+import javafx.scene.Scene;
+import javafx.scene.control.Button;
+import javafx.scene.layout.BorderPane;
+import javafx.scene.layout.StackPane;
+import javafx.stage.Stage;
 
 /**
  *
@@ -34,17 +37,18 @@ public class ClickMe extends Application {
 // Add the layout pane to a scene//
         Scene scene = new Scene(pane, 300, 250);
 // Add the scene to the stage, set the title
-// and show the stage//
+// and show the stage
         primaryStage.setScene(scene);
         primaryStage.setTitle("The Click Me App");
         primaryStage.show();
     }
 
     public void buttonClick() {
-        if (btn.getText().equals("Click me please!")) {
+        if (btn.getText() == "Click me please!") {
             btn.setText("You clicked me!");
         } else {
             btn.setText("Click me please!");
         }
     }
+
 }
