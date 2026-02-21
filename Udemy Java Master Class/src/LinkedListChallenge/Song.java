@@ -9,6 +9,7 @@ package LinkedListChallenge;
  * @author Manex
  */
 public class Song {
+    //Declare the variables
     private String title;
     private double duration;
 
